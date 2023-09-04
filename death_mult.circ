@@ -1,0 +1,1191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="fanout" val="1"/>
+      <a name="incoming" val="4"/>
+      <a name="appear" val="center"/>
+      <a name="bit0" val="none"/>
+      <a name="bit1" val="none"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="none"/>
+    </tool>
+    <tool name="Pin">
+      <a name="facing" val="west"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="bus 0"/>
+    </tool>
+    <tool name="Probe">
+      <a name="facing" val="south"/>
+      <a name="radix" val="16"/>
+    </tool>
+    <tool name="Tunnel">
+      <a name="width" val="8"/>
+      <a name="label" val="vec-adr"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </tool>
+    <tool name="Pull Resistor">
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0x80"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <lib desc="jar#buzzer.jar#immibis.buzzer.Library" name="7"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <circ-port height="10" pin="750,70" width="10" x="95" y="55"/>
+      <circ-port height="10" pin="750,160" width="10" x="95" y="65"/>
+      <circ-port height="10" pin="750,250" width="10" x="95" y="75"/>
+      <circ-port height="10" pin="750,340" width="10" x="95" y="85"/>
+      <circ-port height="10" pin="750,430" width="10" x="95" y="95"/>
+      <circ-port height="10" pin="750,520" width="10" x="95" y="105"/>
+      <circ-port height="10" pin="750,610" width="10" x="95" y="115"/>
+      <circ-port height="10" pin="750,700" width="10" x="95" y="125"/>
+      <circ-port height="10" pin="980,70" width="10" x="95" y="135"/>
+      <circ-port height="10" pin="980,160" width="10" x="95" y="145"/>
+      <circ-port height="10" pin="980,250" width="10" x="95" y="155"/>
+      <circ-port height="10" pin="980,340" width="10" x="95" y="165"/>
+      <circ-port height="10" pin="980,430" width="10" x="95" y="175"/>
+      <circ-port height="10" pin="980,520" width="10" x="95" y="185"/>
+      <circ-port height="10" pin="980,610" width="10" x="95" y="195"/>
+      <circ-port height="10" pin="980,700" width="10" x="95" y="205"/>
+      <circ-port height="10" pin="1210,70" width="10" x="95" y="215"/>
+      <circ-port height="10" pin="1210,160" width="10" x="95" y="225"/>
+      <circ-port height="10" pin="1210,250" width="10" x="95" y="235"/>
+      <circ-port height="10" pin="1210,340" width="10" x="95" y="245"/>
+      <circ-port height="10" pin="1210,430" width="10" x="95" y="255"/>
+      <circ-port height="10" pin="1210,520" width="10" x="95" y="265"/>
+      <circ-port height="10" pin="1210,610" width="10" x="95" y="275"/>
+      <circ-port height="10" pin="1210,700" width="10" x="95" y="285"/>
+      <circ-port height="10" pin="1440,70" width="10" x="95" y="295"/>
+      <circ-port height="10" pin="1440,160" width="10" x="95" y="305"/>
+      <circ-port height="10" pin="1440,250" width="10" x="95" y="315"/>
+      <circ-port height="10" pin="1440,340" width="10" x="95" y="325"/>
+      <circ-port height="10" pin="1440,430" width="10" x="95" y="335"/>
+      <circ-port height="10" pin="1440,520" width="10" x="95" y="345"/>
+      <circ-port height="10" pin="1440,610" width="10" x="95" y="355"/>
+      <circ-port height="10" pin="1440,700" width="10" x="95" y="365"/>
+      <circ-port height="8" pin="630,930" width="8" x="6" y="346"/>
+      <circ-port height="8" pin="60,820" width="8" x="76" y="486"/>
+      <circ-port height="8" pin="80,50" width="8" x="76" y="476"/>
+      <circ-anchor facing="east" height="6" width="6" x="77" y="207"/>
+    </appear>
+    <wire from="(420,580)" to="(470,580)"/>
+    <wire from="(1300,610)" to="(1300,700)"/>
+    <wire from="(1300,250)" to="(1300,340)"/>
+    <wire from="(1070,340)" to="(1070,430)"/>
+    <wire from="(100,20)" to="(100,30)"/>
+    <wire from="(500,460)" to="(500,470)"/>
+    <wire from="(500,380)" to="(500,390)"/>
+    <wire from="(500,500)" to="(500,510)"/>
+    <wire from="(500,540)" to="(500,550)"/>
+    <wire from="(250,770)" to="(250,780)"/>
+    <wire from="(420,580)" to="(420,600)"/>
+    <wire from="(420,420)" to="(420,440)"/>
+    <wire from="(450,250)" to="(450,270)"/>
+    <wire from="(40,670)" to="(150,670)"/>
+    <wire from="(610,160)" to="(610,250)"/>
+    <wire from="(610,520)" to="(610,610)"/>
+    <wire from="(190,810)" to="(360,810)"/>
+    <wire from="(840,70)" to="(840,160)"/>
+    <wire from="(840,430)" to="(840,520)"/>
+    <wire from="(140,820)" to="(140,840)"/>
+    <wire from="(470,170)" to="(470,580)"/>
+    <wire from="(490,860)" to="(580,860)"/>
+    <wire from="(330,70)" to="(360,70)"/>
+    <wire from="(360,560)" to="(360,600)"/>
+    <wire from="(170,640)" to="(190,640)"/>
+    <wire from="(40,670)" to="(40,780)"/>
+    <wire from="(290,170)" to="(300,170)"/>
+    <wire from="(340,740)" to="(350,740)"/>
+    <wire from="(130,650)" to="(140,650)"/>
+    <wire from="(140,820)" to="(150,820)"/>
+    <wire from="(130,100)" to="(270,100)"/>
+    <wire from="(30,190)" to="(40,190)"/>
+    <wire from="(100,20)" to="(110,20)"/>
+    <wire from="(1070,30)" to="(1070,70)"/>
+    <wire from="(210,840)" to="(280,840)"/>
+    <wire from="(190,750)" to="(190,810)"/>
+    <wire from="(360,600)" to="(420,600)"/>
+    <wire from="(360,560)" to="(420,560)"/>
+    <wire from="(570,420)" to="(570,430)"/>
+    <wire from="(420,420)" to="(480,420)"/>
+    <wire from="(40,600)" to="(100,600)"/>
+    <wire from="(210,770)" to="(210,840)"/>
+    <wire from="(40,600)" to="(40,670)"/>
+    <wire from="(450,300)" to="(500,300)"/>
+    <wire from="(1300,340)" to="(1300,430)"/>
+    <wire from="(450,340)" to="(500,340)"/>
+    <wire from="(1070,430)" to="(1070,520)"/>
+    <wire from="(1070,70)" to="(1070,160)"/>
+    <wire from="(100,70)" to="(100,80)"/>
+    <wire from="(180,570)" to="(300,570)"/>
+    <wire from="(100,590)" to="(100,600)"/>
+    <wire from="(500,310)" to="(500,320)"/>
+    <wire from="(500,550)" to="(500,560)"/>
+    <wire from="(500,430)" to="(500,440)"/>
+    <wire from="(500,390)" to="(500,400)"/>
+    <wire from="(500,470)" to="(500,480)"/>
+    <wire from="(500,510)" to="(500,520)"/>
+    <wire from="(500,350)" to="(500,360)"/>
+    <wire from="(570,430)" to="(610,430)"/>
+    <wire from="(610,250)" to="(610,340)"/>
+    <wire from="(610,30)" to="(840,30)"/>
+    <wire from="(610,610)" to="(610,700)"/>
+    <wire from="(480,80)" to="(480,420)"/>
+    <wire from="(280,760)" to="(280,840)"/>
+    <wire from="(390,790)" to="(500,790)"/>
+    <wire from="(840,520)" to="(840,610)"/>
+    <wire from="(840,160)" to="(840,250)"/>
+    <wire from="(40,190)" to="(40,600)"/>
+    <wire from="(440,630)" to="(470,630)"/>
+    <wire from="(470,580)" to="(500,580)"/>
+    <wire from="(490,640)" to="(520,640)"/>
+    <wire from="(330,160)" to="(360,160)"/>
+    <wire from="(190,750)" to="(210,750)"/>
+    <wire from="(270,760)" to="(280,760)"/>
+    <wire from="(330,580)" to="(340,580)"/>
+    <wire from="(130,190)" to="(270,190)"/>
+    <wire from="(300,590)" to="(300,650)"/>
+    <wire from="(1300,30)" to="(1300,70)"/>
+    <wire from="(130,580)" to="(130,650)"/>
+    <wire from="(450,270)" to="(500,270)"/>
+    <wire from="(170,830)" to="(170,840)"/>
+    <wire from="(1300,70)" to="(1300,160)"/>
+    <wire from="(1300,430)" to="(1300,520)"/>
+    <wire from="(340,580)" to="(340,720)"/>
+    <wire from="(1070,520)" to="(1070,610)"/>
+    <wire from="(1070,160)" to="(1070,250)"/>
+    <wire from="(500,520)" to="(500,530)"/>
+    <wire from="(500,560)" to="(500,570)"/>
+    <wire from="(500,480)" to="(500,490)"/>
+    <wire from="(500,400)" to="(500,410)"/>
+    <wire from="(500,440)" to="(500,450)"/>
+    <wire from="(500,320)" to="(500,330)"/>
+    <wire from="(500,360)" to="(500,370)"/>
+    <wire from="(310,90)" to="(310,100)"/>
+    <wire from="(270,90)" to="(270,100)"/>
+    <wire from="(420,560)" to="(420,580)"/>
+    <wire from="(420,400)" to="(420,420)"/>
+    <wire from="(610,340)" to="(610,430)"/>
+    <wire from="(840,250)" to="(840,340)"/>
+    <wire from="(840,30)" to="(1070,30)"/>
+    <wire from="(840,610)" to="(840,700)"/>
+    <wire from="(130,100)" to="(130,190)"/>
+    <wire from="(100,50)" to="(140,50)"/>
+    <wire from="(170,840)" to="(210,840)"/>
+    <wire from="(490,640)" to="(490,860)"/>
+    <wire from="(270,100)" to="(310,100)"/>
+    <wire from="(610,30)" to="(610,70)"/>
+    <wire from="(40,190)" to="(130,190)"/>
+    <wire from="(260,400)" to="(260,440)"/>
+    <wire from="(130,580)" to="(150,580)"/>
+    <wire from="(60,820)" to="(140,820)"/>
+    <wire from="(340,720)" to="(350,720)"/>
+    <wire from="(120,580)" to="(130,580)"/>
+    <wire from="(400,80)" to="(480,80)"/>
+    <wire from="(650,790)" to="(650,850)"/>
+    <wire from="(650,870)" to="(650,930)"/>
+    <wire from="(100,80)" to="(110,80)"/>
+    <wire from="(390,730)" to="(390,790)"/>
+    <wire from="(400,170)" to="(470,170)"/>
+    <wire from="(640,860)" to="(650,860)"/>
+    <wire from="(100,600)" to="(160,600)"/>
+    <wire from="(160,590)" to="(160,600)"/>
+    <wire from="(150,660)" to="(150,670)"/>
+    <wire from="(160,830)" to="(160,840)"/>
+    <wire from="(1300,160)" to="(1300,250)"/>
+    <wire from="(1300,520)" to="(1300,610)"/>
+    <wire from="(1070,610)" to="(1070,700)"/>
+    <wire from="(1070,30)" to="(1300,30)"/>
+    <wire from="(1070,250)" to="(1070,340)"/>
+    <wire from="(500,450)" to="(500,460)"/>
+    <wire from="(500,490)" to="(500,500)"/>
+    <wire from="(500,530)" to="(500,540)"/>
+    <wire from="(500,370)" to="(500,380)"/>
+    <wire from="(500,410)" to="(500,420)"/>
+    <wire from="(500,570)" to="(500,580)"/>
+    <wire from="(500,290)" to="(500,300)"/>
+    <wire from="(500,330)" to="(500,340)"/>
+    <wire from="(270,180)" to="(270,190)"/>
+    <wire from="(310,180)" to="(310,190)"/>
+    <wire from="(610,70)" to="(610,160)"/>
+    <wire from="(610,430)" to="(610,520)"/>
+    <wire from="(840,340)" to="(840,430)"/>
+    <wire from="(270,190)" to="(310,190)"/>
+    <wire from="(840,30)" to="(840,70)"/>
+    <wire from="(260,400)" to="(420,400)"/>
+    <wire from="(260,440)" to="(420,440)"/>
+    <wire from="(440,650)" to="(470,650)"/>
+    <wire from="(340,280)" to="(500,280)"/>
+    <wire from="(630,930)" to="(650,930)"/>
+    <wire from="(540,430)" to="(570,430)"/>
+    <wire from="(480,420)" to="(500,420)"/>
+    <wire from="(140,840)" to="(160,840)"/>
+    <wire from="(40,780)" to="(250,780)"/>
+    <wire from="(380,730)" to="(390,730)"/>
+    <wire from="(290,80)" to="(300,80)"/>
+    <wire from="(180,810)" to="(190,810)"/>
+    <wire from="(230,650)" to="(300,650)"/>
+    <wire from="(360,750)" to="(360,810)"/>
+    <wire from="(520,590)" to="(520,640)"/>
+    <wire from="(640,790)" to="(650,790)"/>
+    <comp lib="4" loc="(1440,700)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+4*0 6*7ffab9fe 7ffabbfe 7ffabbfe 7ffab7fe 7ffab7fe 7ffaaffe 7ffaaffe
+8*7ffabffe 10*0 1c88 1c88 fffff fffff 479102 479102
+2374410 2374410 51db740 51db740 4000020 4000020 2091040 2091040
+2ec2840 2ec2840 4094420 a4000 18*0 22*7ffaaffe 0 0
+1266880 1266880 0 4*7ffab9fe 5*70001c0 10*0 6*7ffab9fe 50*0
+27*70001c0 14*ffffffff 14*0 4*180000 1fe200 1fe200 10*0 14*7
+10*7ffe00 10*bfbe0000
+</a>
+    </comp>
+    <comp lib="4" loc="(750,610)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+7fdafc0 7fdafc0 7fdafc0 6080020e 20*7fdafc0 10*884422c 18*0 7e1e
+20380 2edb8a0 2edb8a0 4000020 2edb8a0 4000020 2edb8a0 4000020
+9*0 22*7fdafc0 e338448 e338448 10000004 10000004 300000 4*7fdafc0
+800 80800 80000 401000 80000 10*2610480 6*7fdafc0 30*2d14ed9c
+10*9425f40 10*1288a820 27*0 10*ffffffff 6*0 18*800080 10*e8f4800 0
+0 a0000000 a0000000 e0000000 e0000000 f8000000 f8000000 f0000000
+f0000000 e0000000 e0000000 c0000000 c0000000 10*1bffffc3 603 603
+6*3 603 603 10*12441000
+</a>
+    </comp>
+    <comp lib="0" loc="(750,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(101,812)" name="Text">
+      <a name="text" val="Sound of USE"/>
+    </comp>
+    <comp lib="4" loc="(1440,70)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+1000700 1601700 1800700 f8aaaa1f 20*1200f00 10*5228940 4*0 40000
+40000 1fffe00 1fffe00 1ffffc80 1ffffc80 8200040 8200040 8dd1040
+8dd1040 51db740 51db740 4dd5020 81240e0 1f8700 3f20 16*0
+8*1200f00 1200700 1200700 1200300 1200300 4*1200100 6*1200500 2250900
+2250900 8000008 8000008 4000 4*1000700 e00e00 e00e00 e80e00
+e00e00 e00e00 10*210000 6*1000700 10*400005c 6*452685c 6*4d5485c 8*492965c
+10*a886314 10*a4b6968 5*e50e00 22*e00e00 8*ffffffff f000000f f000000f 6*0
+10*4000010 4380010 4380010 4140010 4140010 4*4000010 10*0 14*7e000
+10*3fffffc 10*3fb7fc00 10*2a492452
+</a>
+    </comp>
+    <comp lib="4" loc="(980,520)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+4701dc0 4701dc0 43218c0 c2f01e87 18*4701dc0 40001c0 40001c0 10*1c4a8420
+14*0 1c88000 1c88000 7fff800 3f0100 7c306 200481 13ffff8
+13ffff8 2000410 13ffff8 2000410 13ffff8 2000410 f000000 f03c000
+f03c1e0 f000000 f03c000 f03c1e0 f000000 f03c000 f03c1e0 8*4701dc0
+4701cc0 4701cc0 12*4701c40 0 0 4000010 4000010 73445708
+4*4701cc0 401000 401000 80000 808000 11*0 4*4701cc0 40000c0
+40000c0 30*e0aa6407 10*aab04b8 10*dbab80 16*70000 4*0 38000 38000
+7c000 38000 38000 0 0 4*ffffffff 80000001 80000001
+10*0 18*30680a0 16*0 12800000 12800000 9500000 9500000 7d40000
+7d40000 fc00000 fc00000 10*2a95540 10*dc73c000
+</a>
+    </comp>
+    <comp lib="0" loc="(980,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="4" loc="(750,430)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+fb5f80 fb5f80 fb5f80 88400411 20*fb5f80 10*7b3d9e0 19*0 10180
+40abb20 40abb20 2089040 40abb20 2089040 40abb20 2089040 9*0
+22*fb5f80 5*0 4*fb5f80 1ff000 1ff000 1ff800 1ff100 1ff000
+10*0 6*fb5f80 30*20000004 10*e724a70 10*128aa820 27*1ff000 10*ffffffff fff00fff
+fff00fff 4*0 18*5087f085 10*a884800 0 0 80000000 80000000
+0 0 6*80000000 0 0 10*3ffffc0 10*5f 10*124a2800
+</a>
+    </comp>
+    <comp lib="6" loc="(387,346)" name="Text">
+      <a name="text" val="DEATH"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="4" loc="(980,430)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+40441c0 40441c0 50406c0 72600c8c 20*40441c0 10*2a490420 14*0 800000
+800000 3fdd000 78200 f8f9a 204612 10effc8 10effc8 2000010
+10effc8 2000010 10effc8 2000010 9*0 8*40441c0 40440c0 40440c0
+4044040 4044040 10*4000040 e339148 e339148 4000010 4000010 4a445488
+4*40441c0 408100 401000 1000 8400 800000 10*0 6*40441c0
+30*a0000005 10*ee81ca8 10*8a2a80 16*f0000 70000 4*0 10000 7c000
+54000 54000 0 0 6*ffffffff 80000001 80000001 8*0
+18*3ffffe0 14*0 28000000 28000000 25000000 25000000 ea00000 ea00000
+7e80000 7e80000 3f800000 3f800000 10*2e96743 b74fc004 b74fc004 6*b74fc000
+b74fc004 b74fc004
+</a>
+    </comp>
+    <comp lib="4" loc="(750,340)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+3adf00 3adf00 3adf00 88301811 20*3adf00 10*804020 19*0 8000
+4000020 4000020 2085040 4000020 2085040 4000020 2085040 9*0
+22*3adf00 5*0 4*3adf00 fffe00 fffe00 fffe00 ffff00 fffe00
+10*0 6*3adf00 30*ffffffff 10*94a4a40 10*1ceeaef8 27*fffe00 12*ffffffff 4*0
+18*50849085 10*aef3000 14*0 10*3ffffc0 10*1f 10*d914400
+</a>
+    </comp>
+    <comp lib="0" loc="(490,640)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="5"/>
+      <a name="incoming" val="5"/>
+      <a name="appear" val="center"/>
+    </comp>
+    <comp lib="2" loc="(380,730)" name="Multiplexer">
+      <a name="width" val="8"/>
+      <a name="disabled" val="0"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(750,430)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(390,587)" name="Text">
+      <a name="text" val="WIN"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(440,630)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="monster"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="0" loc="(1440,250)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1210,430)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(381,306)" name="Text">
+      <a name="text" val="GOP_BAD"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(260,80)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="hungry"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="4" loc="(180,810)" name="Counter">
+      <a name="width" val="1"/>
+      <a name="max" val="0x1"/>
+    </comp>
+    <comp lib="0" loc="(100,60)" name="Tunnel">
+      <a name="label" val="hungry"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="1" loc="(640,860)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="3"/>
+      <a name="negate0" val="true"/>
+      <a name="negate1" val="true"/>
+      <a name="negate2" val="true"/>
+    </comp>
+    <comp lib="4" loc="(750,520)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+3fd6fc0 3fd6fc0 3fd6fc0 a8800211 20*3fd6fc0 10*804020 18*0 1e1
+200c0 40d88a0 40d88a0 4000040 40d88a0 4000040 40d88a0 4000040
+9*0 22*3fd6fc0 5*0 4*3fd6fc0 0 800 80800 408100
+1000 10*1cfe300 6*3fd6fc0 30*3914adb4 10*9424a40 10*1ceeee20 27*0 10*ffffffff
+e0000007 e0000007 4*0 18*f0800087 10*ae84800 0 0 40000000
+40000000 80000000 80000000 4*e0000000 c0000000 c0000000 80000000 80000000
+10*7fffffc 4*18f f f 4*18f 10*124a2800
+</a>
+    </comp>
+    <comp lib="0" loc="(1440,340)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1210,340)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(140,50)" name="Tunnel">
+      <a name="label" val="death"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="0" loc="(450,300)" name="Constant">
+      <a name="width" val="9"/>
+      <a name="value" val="0x2"/>
+    </comp>
+    <comp lib="4" loc="(980,340)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+4f83dc0 4f83dc0 4f801c0 4a000098 20*4f83dc0 10*49713fa0 16*0 1c88000
+69400 70006 307018 2044f10 2044f10 208bb10 2044f10 208bb10
+2044f10 208bb10 9*0 8*4f83dc0 47839c0 47839c0 43830c0 43830c0
+41830c0 41830c0 4*41010c0 4*40000c0 94a5148 94a5148 4000010 4000010
+4b442488 4*4f83dc0 8100 408100 401000 88400 800000 10*1c10300
+6*4f83dc0 30*ffffffff 10*8880490 10*8bab80 18*f0000 0 0 0
+10000 92000 92000 0 0 0 6*ffffffff c0000003
+c0000003 8*0 18*2020020 14*0 50000000 50000000 4a800000 4a800000
+1f500000 1f500000 ff00000 ff00000 7e000000 7e000000 10*200007c ef878004
+ef878004 6*ef878000 ef878004 ef878004
+</a>
+    </comp>
+    <comp lib="0" loc="(360,90)" name="Constant">
+      <a name="width" val="9"/>
+      <a name="value" val="0x4"/>
+    </comp>
+    <comp lib="0" loc="(100,40)" name="Tunnel">
+      <a name="label" val="monster"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="0" loc="(1210,250)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(60,820)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="USE"/>
+    </comp>
+    <comp lib="0" loc="(1440,610)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="4" loc="(290,70)" name="Counter">
+      <a name="width" val="9"/>
+    </comp>
+    <comp lib="4" loc="(980,700)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+59552c0 59552c0 58562c0 2fc7e80 16*59552c0 4*5fd7ec0 10*1c438424 12*0
+1c88000 1c88000 7fff800 7fff800 1ffffc80 13f0020 1f0300 f0140
+1fffe0 1fffe0 10effc8 1fffe0 10effc8 1fffe0 10effc8 f000000
+f03c000 f03c1e0 f000000 f03c000 f03c1e0 f000000 f03c000 f03c1e0
+4*59552c0 6*5fd7ec0 5fc7ec0 5fc7ec0 10*5fc7e40 0 0 4000010
+4000010 53445508 4*59552c0 1000 80000 88400 800000 80000
+10*0 59552c0 59552c0 4*5954ac0 30*c46400 10*10000 10*aa2a80 14*20000
+6*0 38000 38000 7c000 38000 38000 0 0
+ffffffff ffffffff 14*0 6*528aa2a5 52faa2a5 52faa2a5 10*528aa2a5 18*0
+2500000 2500000 2540000 2540000 1fc0000 1fc0000 10*2ab5543 10*a07f0000
+10*c
+</a>
+    </comp>
+    <comp lib="4" loc="(170,640)" name="Counter">
+      <a name="max" val="0xb"/>
+    </comp>
+    <comp lib="0" loc="(980,700)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="4" loc="(1210,70)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+5c542c0 5c542c0 59552c0 f2fc7e80 5c542c0 5c542c0 5c546c0 5c546c0
+5e546c0 5e546c0 5f55ec0 5f55ec0 10*5fd7ec0 5fd3cc0 5fd3cc0 10*2a444424
+10*0 800000 800000 3fdd000 3fdd000 fffff00 fffff00 13ff7080
+1fa0210 f8f91 1f8491 bbfc0 bbfc0 13ffff8 bbfc0 13ffff8
+bbfc0 13ffff8 f000000 f03c000 f03c1e0 f000000 f03c000 f03c1e0
+f000000 f03c000 f03c1e0 12*5fd7ec0 10*4fc7e40 0 0 4000010
+4000010 48445488 4*5c542c0 80000 80400 8400 0 80400
+10*a0e0 4*5c542c0 5fd3cc0 5fd3cc0 30*c4e480 10*20000 10*abaa80 13*f8000
+8*0 10000 7c000 54000 54000 0 0 ffffffff
+ffffffff 14*0 f29ea2a7 f29ea2a7 f29aa2a7 f29aa2a7 f2eaa2a7 f2eaa2a7
+f2aaa2a7 f2aaa2a7 10*f28aa2a7 10*3818c890 10*0 1280000 1280000 ff0000
+ff0000 10*2af777c 10*e07f0000
+</a>
+    </comp>
+    <comp lib="0" loc="(470,640)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="death"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="0" loc="(190,660)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0x11"/>
+    </comp>
+    <comp lib="4" loc="(120,570)" name="Counter">
+      <a name="max" val="0x50"/>
+    </comp>
+    <comp lib="0" loc="(1210,70)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(310,600)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="key"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="0" loc="(360,180)" name="Constant">
+      <a name="width" val="9"/>
+      <a name="value" val="0x61"/>
+    </comp>
+    <comp lib="0" loc="(980,340)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="4" loc="(330,70)" name="Counter">
+      <a name="width" val="9"/>
+      <a name="max" val="0x5c"/>
+      <a name="ongoal" val="stay"/>
+    </comp>
+    <comp lib="4" loc="(1210,700)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+1060700 1460700 1060700 aaaa00 20*1460f00 10*5228940 6*0 ff7400
+ff7400 fffff00 fffff00 8f22040 8f22040 8000040 8000040 9111040
+9111040 511b020 f0520a0 3fc884 1ff10 16*0 8*1460f00 1460700
+1460700 1460300 1460300 1420100 1420100 1400100 1400100 6*1400300
+2250900 2250900 7fffff0 7fffff0 22000 4*1060300 1ff000 1ff000
+1ff400 9ff000 1ff000 10*210060 6*1060300 10*4000040 6*4526c40 6*4554840
+8*45a9640 10*8885208 10*a4b6958 27*1ff000 8*ffffffff c0000003 c0000003 6*0
+18*ffffffff 10*0 14*f87d3801 10*3ffffc0 10*f97dc00 10*2a69245a
+</a>
+    </comp>
+    <comp lib="3" loc="(400,80)" name="Adder">
+      <a name="width" val="9"/>
+    </comp>
+    <comp lib="0" loc="(580,860)" name="Splitter">
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="5"/>
+      <a name="appear" val="center"/>
+      <a name="bit0" val="none"/>
+      <a name="bit1" val="none"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="1"/>
+      <a name="bit4" val="2"/>
+    </comp>
+    <comp lib="0" loc="(750,610)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(263,287)" name="Text">
+      <a name="text" val="GOP_GOOD"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="3" loc="(400,170)" name="Adder">
+      <a name="width" val="9"/>
+    </comp>
+    <comp lib="1" loc="(240,760)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(242,583)" name="Text">
+      <a name="text" val="Background music"/>
+    </comp>
+    <comp lib="4" loc="(640,790)" name="ROM">
+      <a name="dataWidth" val="16"/>
+      <a name="contents">addr/data: 8 16
+a5 c4 a5 f7 1 c4 dc c4
+a5 83 a5 c4 a5 f7 a5 83
+1 f7 dc 126 1 7c 1 7c
+1 7c 7*1 15*0 52
+</a>
+    </comp>
+    <comp lib="2" loc="(330,580)" name="Multiplexer">
+      <a name="width" val="8"/>
+      <a name="disabled" val="0"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="4" loc="(750,250)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+6bc00 6bc00 6bc00 700fe00e 20*6bc00 10*8844220 19*0 2000
+4000040 4000040 2143740 4000040 2143740 4000040 2143740 9*0
+22*6bc00 0 0 2a2ca164 2a2ca164 0 4*6bc00 5*1ffff00
+10*0 6*6bc00 30*a0000005 10*e718e70 10*0 27*1ffff00 12*ffffffff 4*0
+18*5087f085 24*0 10*1ffff80 e1f e1f 21f 21f 1f
+1f 21f 21f e1f e1f
+</a>
+    </comp>
+    <comp lib="4" loc="(330,160)" name="Counter">
+      <a name="width" val="9"/>
+      <a name="max" val="0xbd"/>
+      <a name="ongoal" val="stay"/>
+    </comp>
+    <comp lib="6" loc="(339,427)" name="Text">
+      <a name="text" val="HUNGRY_DEATH"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="4" loc="(1440,610)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+1ff600 1ff000 1ff000 10fe100 6*3ffff6fc 3ffff7fc 3ffff7fc 3fffeffc
+3fffeffc 10*3ffffffc 10*0 800 800 7fff8 7fff8 9ffb84
+9ffb84 2000010 2000010 9111040 9111040 4dd5020 4dd5020 2000020
+2000020 20a1040 20a1040 40a3840 182400 18*0 22*3ffffffc 0
+0 1b56dc0 1b56dc0 18000 4*3ffff6fc 5*60000c0 10*0 6*3ffff6fc
+40*0 10*18c600 27*60000c0 12*ffffffff ff8001ff ff8001ff 14*0 4*1c0000
+1ddc00 1ddc00 10*0 14*3f 10*1ffff80 10*dfbe0000
+</a>
+    </comp>
+    <comp lib="4" loc="(1210,430)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+3040380 3040380 3040380 71438515 20*3040380 18*0 1c88000 1c88000
+fffff00 fffff00 13ff7080 13ff7080 8200040 8200040 8dd1040 fe18c03
+fcf80 7fe2c 0 0 11380 0 11380 0
+11380 9*0 8*3040380 4*3040180 3040080 3040080 4*3020080 3030080
+3030080 3038080 3038080 f99e600 f99e600 4000010 4000010 2400000
+4*3040180 808000 800000 0 88400 800000 10*1210020 6*3040180
+30*7ffffc0 10*8be8a48 10*6322648 9*f8000 13*0 10000 4*0 6*ffffffff
+c0000003 c0000003 8*0 4*f28ebea7 f2babea7 f2babea7 f2dabea7 f2dabea7
+f2babea7 f2babea7 8*f28abea7 10*18292db8 12*7e000 256000 256000 10*3ffffc3
+10*3ff0f000 10*2a59c456
+</a>
+    </comp>
+    <comp lib="4" loc="(1210,520)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+1080780 1080780 1080780 18a28a00 20*1080780 16*0 200000 200000
+3fdd000 3fdd000 1ffffc80 1ffffc80 8f22040 8f22040 8000040 8000040
+9111040 fe2e800 fe004 fe00 0 0 100 0
+100 0 100 9*0 8*1080780 1080380 1080380 4*1040180
+1020080 1020080 1030080 1030080 1020080 1020080 1038080 1038080
+2250900 2250900 4000010 4000010 181c000 4*1080180 800000 800000
+0 8400 800000 10*121c040 6*1080180 30*4000040 10*8888a88 10*a4a2948
+8*70000 19*0 8*ffffffff 8*0 4*29effa0 2deffa0 2deffa0 12*2faffa0
+10*287d2aa8 12*7e0f8 16e0f8 16e0f8 10*3fffffc 10*2187800 10*1c69245a
+</a>
+    </comp>
+    <comp lib="0" loc="(980,520)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="4" loc="(1210,160)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+5f93cc0 5f93cc0 5c57cc0 1a783c9f 18*5f93cc0 4f900c0 4f900c0 10*49444438
+10*0 1c88000 1c88000 7fff800 7fff800 1ffffc80 1ffffc80 8f22040
+1fc3400 7c00a 1f6300 11380 11380 fffff0 11380 fffff0
+11380 fffff0 9*0 8*5f93cc0 4*4f93cc0 4793c40 4793c40 8*4783c40
+0 0 4000010 4000010 400000 4*5f93cc0 80400 88400
+808000 0 88400 10*110 4*5f93cc0 5f900c0 5f900c0 30*c4aa00
+20*0 12*f8000 9*0 10000 92000 92000 0 0
+0 ffffffff ffffffff 80000001 80000001 12*0 529ea6a5 529ea6a5
+52baa6a5 52baa6a5 4*52faa6a5 52baa6a5 52baa6a5 8*528aa6a5 10*48292890 10*0
+940000 940000 7e8000 7e8000 10*c2000043 10*e0fb8000 10*2a49c392
+</a>
+    </comp>
+    <comp lib="4" loc="(1440,520)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+203e00 38203800 203800 1101100 6*7e03ef0 7e017f0 7e017f0 7e03ff0
+7e03ff0 10*7e01ff0 10*89c0a2a 0 0 3fdd0 3fdd0 ffffe4
+ffffe4 2080010 2080010 8dd1040 8dd1040 511b020 511b020 4000020
+4000020 2091040 2091040 2ec2840 300c00 18*0 14*7e01ff0 8*7e00ff0
+4*0 18000 4*7e03ef0 4*4000040 4800040 10*0 6*7e03ef0 7ffffc0
+7ffffc0 26*7ffffc1 7ffffc0 7ffffc0 10*0 10*18c600 27*4000040 12*ffffffff
+4*0 18*ffffffff 10*0 14*f 10*3fffffc 10*ffbe0000
+</a>
+    </comp>
+    <comp lib="0" loc="(110,80)" name="Tunnel">
+      <a name="label" val="win"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="0" loc="(470,620)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="key"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="0" loc="(1440,700)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(470,660)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="win"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="0" loc="(30,190)" name="Clock"/>
+    <comp lib="7" loc="(650,860)" name="Advanced buzzer"/>
+    <comp lib="4" loc="(980,160)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+3fff8780 3fff8780 3fff8780 c1000107 20*3fff8780 10*8 18*0 20200
+105824 2000010 2000010 2edb8a0 2000010 2edb8a0 2000010 2edb8a0
+9*0 8*3fff8780 3fff8380 3fff8380 8*3fff8180 4*3fff8080 94a4a78 94a4a78
+6000010 6000010 400000 4*3fff8380 80000 8100 408100 80000
+8400 10*210840 6*3fff8380 30*29b6ad14 42*0 10000 10000 0
+0 0 8*ffffffff 80000001 80000001 6*0 18*ffffff8 12*0
+40000000 40000000 50000000 50000000 fa800000 fa800000 3fc00000 3fc00000
+3f000000 3f000000 f8000000 f8000000 10*43ffffc3 7c00042 7c00042 6*7c00002
+7c00042 7c00042 10*2082800
+</a>
+    </comp>
+    <comp lib="4" loc="(750,70)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+53*0 800 2085040 2085040 4229020 2085040 4229020 2085040
+4229020 33*0 39ca9254 39ca9254 5*0 5*7ffffc0 66*0 27*7ffffc0
+14*ffffffff 0 0 18*5087f085 24*0 10*7ffe00 10*3f
+</a>
+    </comp>
+    <comp lib="4" loc="(980,610)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+48822c0 48822c0 4483cc0 2f83e80 10*48822c0 4c826c0 4c826c0 4e82ec0
+4e82ec0 4*4f83ec0 4f83cc0 4f83cc0 10*8728438 12*0 800000 800000
+3fdd000 3fdd000 fffff00 3f80c0 f8081 1a0840 fffff0 fffff0
+2044f10 fffff0 2044f10 fffff0 2044f10 f000000 f03c000 f03c1e0
+f000000 f03c000 f03c1e0 f000000 f03c000 f03c1e0 4c826c0 4c826c0
+8*4f83ec0 12*4f83e40 0 0 4000010 4000010 62447608 4*48822c0
+401000 1000 80400 800000 11*0 4*48822c0 4f83ec0 4f83ec0
+30*ca6480 10*eeb18a8 10*da3980 15*70000 4*0 10000 38000 1ff000
+7ffc00 3ff800 7c000 10000 0 ffffffff ffffffff 80000001
+80000001 12*0 18*f2fabea7 18*0 4a00000 4a00000 3a80000 3a80000
+3f00000 3f00000 10*2ad657c 10*706bc000
+</a>
+    </comp>
+    <comp lib="0" loc="(750,340)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="4" loc="(290,160)" name="Counter">
+      <a name="width" val="9"/>
+    </comp>
+    <comp lib="4" loc="(1440,430)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+601400 76601c00 601c00 3a00b80 6*601400 602c00 602c00 12*600c00
+10*5220900 0 0 1c880 1c880 7ffff8 7ffff8 23c8810
+23c8810 8000040 8000040 51db740 51db740 4dd5020 4dd5020 2000020
+2000020 20a1040 a81b00 18000 17*0 14*600c00 8*600400 5*0
+4*601400 4000040 4000440 4000040 4000040 4808440 10*0 6*601400
+4000040 4000040 4000041 4000041 22*4000042 4000041 4000041 4000040
+4000040 10*f888254 10*0 41dc040 26*4000040 12*ffffffff 4*0 12*10000004
+100c0004 100c0004 100f0004 100f0004 10000004 10000004 10*3030300 14*3c03c000
+10*fffffc4 10*efbe0000
+</a>
+    </comp>
+    <comp lib="4" loc="(1440,160)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+187e700 1bfe700 878700 a89ff205 20*1a7ef00 10*2227880 4*0 e4400
+e4400 3ffffc0 3ffffc0 13ff7080 13ff7080 8000040 8000040 9111040
+9111040 511b020 511b020 4000020 8018840 f803c 3f00 16*0
+6*1a7ef00 1a00f00 1a00f00 1a00700 1a00700 4*1a00300 1a00500 1a00500
+1a10500 1a10500 1a14500 1a14500 1a54500 1a54500 2190654 2190654
+10000004 10000004 8000 4*187e700 1000100 1000100 1008500 1800100
+1800100 10*21f060 6*187e700 8*4000054 400005c 400005c 452685c 452685c
+4526854 4526854 452685c 452685c 4c9c85c 4c9c85c 4c9c854 4c9c854
+4c9c85c 4c9c85c 45ab65c 45ab65c 6*45ab654 10*a882294 10*1f4aa968 4*1050100
+23*1000100 10*ffffffff 6*0 18*ffffff8 10*0 14*7e000 10*3ffffc3 10*6fbbf800
+10*2a49c392
+</a>
+    </comp>
+    <comp lib="0" loc="(630,930)" name="Pin">
+      <a name="width" val="7"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="VOLUME"/>
+    </comp>
+    <comp lib="0" loc="(1210,700)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(750,70)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(750,250)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="4" loc="(1440,340)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+c02e00 39cfce00 4fce00 a92aa91b e02e00 e02e00 e62e00 e62e00
+e7ee00 e7ee00 e7fe00 e7fe00 12*e7ee00 10*5220900 0 0
+8000 8000 3fffc0 3fffc0 4ffdc20 4ffdc20 8200040 8200040
+9111040 9111040 511b020 511b020 4000020 4000020 2091040 11a3000
+37c00 1200 16*0 8*e7ee00 e78e00 e78e00 e18600 e18600
+4*e00600 e10600 e10600 e50600 e50600 e54600 e54600 4*0
+18000 4*c02e00 4000040 4080440 4008040 4000040 4088440 10*0
+6*c02e00 4*4000040 4000043 4000043 4*4000045 6*4554c45 6*4c95445 4*4dab645
+4*4dab640 10*a884294 10*0 40d8040 40d8040 25*4000040 10*ffffffff fff00fff
+fff00fff 4*0 18*1ffffffc 10*3030300 14*3e07e000 10*33ffffc4 10*efbf8000
+</a>
+    </comp>
+    <comp lib="4" loc="(1210,340)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+2720380 2720380 2727b80 81838315 20*2720380 18*0 800000 800000
+7fff800 7fff800 1ffffc80 1ffffc80 8f22040 8f22040 8000040 1ff01c04
+1f8a9f 7f2b6 0 0 bbfc0 0 bbfc0 0
+bbfc0 9*0 8*2720380 2220180 2220180 2020180 2020180 6*2020080
+2030080 2030080 2038080 2038080 0 0 4000010 4000010
+400000 4*2720180 8400 808000 800000 80400 808000 10*1210090
+6*2720180 50*0 10*f8000 12*0 10000 10000 0 0
+0 6*ffffffff 80000001 80000001 8*0 4*528ea2a5 529aa2a5 529aa2a5
+52faa2a5 52faa2a5 529aa2a5 529aa2a5 8*528aa2a5 10*38292da8 12*7e000 3aa000
+3aa000 10*3fffffc 10*6c39e000 10*2a592456
+</a>
+    </comp>
+    <comp lib="0" loc="(1440,70)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="4" loc="(980,250)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+3e000380 3e000380 3e000380 7100010c 20*3e000380 26*0 800000 7000
+30201 3c2c 2000410 2000410 2088890 2000410 2088890 2000410
+2088890 9*0 8*3e000380 3e000180 3e000180 12*3e000080 94a4e48 94a4e48
+4000010 4000010 705f273e 4*3e000180 8100 8100 401000 80400
+808000 10*2610480 6*3e000180 30*20000004 10*e8819d0 31*0 10000 111000
+10000 0 0 0 8*ffffffff 8*0 18*fc00001f 12*0
+a0000000 a0000000 a8000000 a8000000 75000000 75000000 1fa00000 1fa00000
+1fc00000 1fc00000 fc000000 fc000000 10*83ffffc0 3f818082 3f818082 3f818002
+3f818002 3f818000 3f818000 3f818002 3f818002 3f818082 3f818082 10*21044a8
+</a>
+    </comp>
+    <comp lib="0" loc="(980,250)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="4" loc="(980,70)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+1ffef7c0 1ffef7c0 1ffef7c0 1000100 20*1ffef7c0 10*4 18*0 20200
+88018 208bb10 208bb10 40d88a0 208bb10 40d88a0 208bb10 40d88a0
+9*0 10*1ffef7c0 8*1ffef3c0 4*1ffef1c0 e4b8a48 e4b8a48 7fffff0 7fffff0
+400000 4*1ffef7c0 80800 80000 8100 1000 88400 10*3e10840
+6*1ffef7c0 30*2934ad14 42*0 10000 10000 0 0 0
+8*ffffffff c0000003 c0000003 6*0 18*8000008 10*aef32a0 0 0
+a0000000 a0000000 a8000000 a8000000 fd000000 fd000000 7f000000 7f000000
+fc000000 fc000000 f0000000 f0000000 10*43fffffc 4*20 0 0
+4*20 10*f882800
+</a>
+    </comp>
+    <comp lib="0" loc="(340,740)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0x30"/>
+    </comp>
+    <comp lib="0" loc="(750,520)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(80,50)" name="Splitter">
+      <a name="fanout" val="5"/>
+      <a name="incoming" val="5"/>
+      <a name="appear" val="center"/>
+    </comp>
+    <comp lib="6" loc="(383,255)" name="Text">
+      <a name="text" val="GOP_OK"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(80,50)" name="Pin">
+      <a name="width" val="5"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="mult"/>
+    </comp>
+    <comp lib="4" loc="(180,570)" name="Counter">
+      <a name="max" val="0x10"/>
+    </comp>
+    <comp lib="0" loc="(750,700)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1440,520)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="4" loc="(1210,610)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+1080700 1080700 1080700 f0a00a00 20*1880700 10*89c8a20 6*0 722000
+722000 7fff800 7fff800 13ff7080 13ff7080 8200040 8200040 8dd1040
+8dd1040 51db740 1ff46180 1fc884 fe08 16*0 8*1880700 4*1880300
+1840100 1840100 1820100 1820100 1830100 1830100 4*1800100 2250900
+2250900 6000010 6000010 22000 4*1080300 800000 0 80000
+808000 0 10*e10040 6*1080300 10*4000040 6*4500040 6*4400040 8*4c00040
+10*8889308 10*a4a2958 7*70000 20*0 8*ffffffff 80000001 80000001 6*0
+6*37f0060 4*3570060 3970060 3970060 6*3070060 10*4844caa8 12*fc4af07 fcdaf07
+fcdaf07 10*3ffffc3 10*fffbc00 10*1c69245a
+</a>
+    </comp>
+    <comp lib="0" loc="(1210,610)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(340,280)" name="Constant">
+      <a name="width" val="9"/>
+    </comp>
+    <comp lib="0" loc="(1210,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(269,665)" name="Text">
+      <a name="text" val="Alarm music"/>
+    </comp>
+    <comp lib="4" loc="(750,160)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+24*0 10*70381c0 19*0 1000 2089040 2089040 21c5020 2089040
+21c5020 2089040 21c5020 33*0 2a2abf54 2a2abf54 5*0 5*3ffff80
+16*0 30*e0000007 10*0 10*a00 27*3ffff80 12*ffffffff ff8001ff ff8001ff
+0 0 18*f0849087 24*0 10*ffff00 4*1bf bf bf
+4*1bf
+</a>
+    </comp>
+    <comp lib="0" loc="(440,650)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="hungry"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="4" loc="(1440,250)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+885700 6572700 cfc700 a84aa40d a85f00 a85f00 4*ab5f00 ab7f00
+ab7f00 12*ab3f00 10*2220880 4*0 1fee80 1fee80 7ffff20 7ffff20
+8f22040 8f22040 8dd1040 8dd1040 51db740 51db740 4dd5020 4dd5020
+2000020 2300840 703c3 3fc0 16*0 6*ab3f00 4*afef00 afe700
+afe700 afe300 afe300 8*afe500 4*0 10000 4*885700 fe0000ff
+fe0800ff fe0080ff fe0000ff fe0800ff 10*60 6*885700 6*400005c 400005e
+400005e 400005a 400005a 472485a 472485a 4*472485e 6*4c9485e 4*453b25e
+4*453b25c 10*a88429c 10*1132a648 fe0500ff fe0500ff fe0500ff 24*fe0000ff 10*ffffffff
+e0000007 e0000007 4*0 10*8000008 4*81c0008 8028008 8028008 8000008
+8000008 10*0 14*1c07e000 10*c3fffff8 10*efbbe000
+</a>
+    </comp>
+    <comp lib="0" loc="(1440,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="4" loc="(750,700)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+ffebfc0 ffebfc0 ffebfc0 21000100 20*ffebfc0 10*70381cc 18*0 18000
+40200 2088890 2088890 40abb20 2088890 40abb20 2088890 40abb20
+9*0 22*ffebfc0 94a4448 94a4448 8000008 8000008 480000 4*ffebfc0
+80800 80800 8100 401000 80400 10*210840 6*ffebfc0 30*29b6ad94
+10*e419170 10*1ce8ae20 27*0 8*ffffffff f000000f f000000f 6*0 18*ffffff8
+10*a894800 0 0 40000000 40000000 d0000000 d0000000 fe000000
+fe000000 fc000000 fc000000 f8000000 f8000000 e0000000 e0000000 10*23ffffc0
+10*11 10*12441000
+</a>
+    </comp>
+    <comp lib="0" loc="(980,70)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(980,430)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="3" loc="(230,650)" name="Adder"/>
+    <comp lib="0" loc="(260,170)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="win"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="2" loc="(540,430)" name="Multiplexer">
+      <a name="select" val="5"/>
+      <a name="width" val="9"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(450,250)" name="Constant">
+      <a name="width" val="9"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(1210,520)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1440,430)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(570,420)" name="Probe">
+      <a name="facing" val="south"/>
+      <a name="radix" val="16"/>
+    </comp>
+    <comp lib="0" loc="(450,340)" name="Constant">
+      <a name="width" val="9"/>
+      <a name="value" val="0x3"/>
+    </comp>
+    <comp lib="4" loc="(1210,250)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 9 32
+6f901c0 6f901c0 6f901c0 71010115 20*6f901c0 20*0 3fdd000 3fdd000
+fffff00 fffff00 13ff7080 13ff7080 8200040 ff81808 f8a84 7e01b
+100 100 1fffe0 100 1fffe0 100 1fffe0 9*0
+8*6f901c0 67101c0 67101c0 62100c0 62100c0 10*60100c0 0 0
+4000010 4000010 400000 4*6f901c0 88400 8400 800000 80000
+8400 10*121f110 6*6f901c0 40*0 10*30 11*f8000 10*0 10000
+111000 10000 0 0 0 4*ffffffff 80000001 80000001
+10*0 528ea2a5 528ea2a5 529ea2a5 529ea2a5 52baa2a5 52baa2a5 52faa2a5
+52faa2a5 52baa2a5 52baa2a5 8*528aa2a5 10*48292d90 12*3c000 7d4000 7d4000
+10*3ffffc0 10*c8cbc000 10*2a492452
+</a>
+    </comp>
+    <comp lib="0" loc="(110,20)" name="Tunnel">
+      <a name="label" val="key"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="0" loc="(980,610)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="4" loc="(270,750)" name="Counter">
+      <a name="max" val="0x40"/>
+    </comp>
+  </circuit>
+</project>
