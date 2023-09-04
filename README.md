@@ -8,7 +8,7 @@ This is all files for the game "Vovan: Cosmo-gopnik" (create in Logisim), what i
 - death_mult.circ - scheme to display cartoons (+ music);
 - buzzer.jar - library for the buzzer (music).
 
-To launch the game, you need Java and Logisim 2.7.1
+To launch the game, you need Java and Logisim 2.7.1 and run Vovan_cosmo-gopnik.circ.
 
 # About the game:
 This is "Pseudo-3D Sci_Fi game with procedural generation, music and three cartoon-endings on CdM-8 processor".
